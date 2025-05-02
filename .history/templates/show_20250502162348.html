@@ -26,7 +26,7 @@
     justify-content: center;
     align-items: center;
   }
-
+  
     .navbar {
       margin-bottom: 20px;
     }
@@ -38,7 +38,6 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      background-color: #eceedc;
     }
 
     .container {
@@ -86,29 +85,11 @@
       color: #ffffff;
       text-decoration: none; /* Ensures no underline on hover */
     }
-
-    .content {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      border-radius: 10px;
-      width: 80%;
-      max-width: 800px;
-    }
-
-.page-title{
-    background-color: #eceedc;
-}
-
-.form-control {
-      background-color: #eceedc;
-    }
   </style>
 </head>
 
 <body>
 
-  <div class="background">
-    <div class="content">
   <!-- Title -->
   <div class="container ">
     <h1 class="page-title">Prediction Results</h1>
@@ -126,14 +107,13 @@
       <p class="result-text text-center">No prediction available.</p>
     {% endif %}
     <a href="/">
-      <button class="btn btn-outline-success" type="submit" style=" background-color: #038fdb;">Go Back</button>
+      <button class="btn btn-outline-success" type="submit">Go Back</button>
     </a>
   </div>
 
   <!-- Footer -->
   <div class="footer"></div>
-</div>
-</div>
+
 </body>
 
 </html>

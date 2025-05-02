@@ -10,25 +10,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+
   <title>Email Spam Classifier</title>
 
   <style>
-   .background {
-    background-image: url("{{ url_for('static', filename='images/spamimg.png') }}");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    .container {
 
-  .content {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      border-radius: 10px;
-      width: 80%;
-      max-width: 800px;
+      background-image: url('images/spamimg.jpg');
     }
 
     .navbar {
@@ -42,7 +31,6 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      background-color: #eceedc;
     }
 
     .btn-primary {
@@ -61,15 +49,10 @@
       color: #343a40;
       margin-top: 20px;
       margin-bottom: 20px;
-      background-color: #eceedc;
-    }
-
-    .form-control {
-      background-color: #eceedc;
     }
 
     .page-title span {
-      color: #038fdb;
+      color: #007bff;
     }
 
     .container {
@@ -92,7 +75,25 @@
       height: 100%;
     }
 
-   
+    .background {
+      background-image: url('../images/spamimg.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .content {
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Optional dark overlay */
+      padding: 20px;
+      border-radius: 10px;
+    }
   </style>
 </head>
 
@@ -117,7 +118,7 @@
                 style="height: 200px"></textarea>
               <label for="email">Write your email here...</label>
             </div>
-            <button class="w-100 btn btn-lg btn-primary" style=" background-color: #038fdb;">Submit</button>
+            <button class="w-100 btn btn-lg btn-primary">Submit</button>
           </form>
         </div>
       </div>

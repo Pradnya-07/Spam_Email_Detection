@@ -14,7 +14,7 @@
 
   <style>
    .background {
-    background-image: url("{{ url_for('static', filename='images/spamimg.png') }}");
+    background-image: url("{{ url_for('static', filename='images/spamimg.jpg') }}");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -22,14 +22,6 @@
     justify-content: center;
     align-items: center;
   }
-
-  .content {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      border-radius: 10px;
-      width: 80%;
-      max-width: 800px;
-    }
 
     .navbar {
       margin-bottom: 20px;
@@ -42,7 +34,6 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      background-color: #eceedc;
     }
 
     .btn-primary {
@@ -61,15 +52,10 @@
       color: #343a40;
       margin-top: 20px;
       margin-bottom: 20px;
-      background-color: #eceedc;
-    }
-
-    .form-control {
-      background-color: #eceedc;
     }
 
     .page-title span {
-      color: #038fdb;
+      color: #007bff;
     }
 
     .container {
@@ -92,7 +78,25 @@
       height: 100%;
     }
 
-   
+    .background {
+      background-image: url('../images/spamimg.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .content {
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Optional dark overlay */
+      padding: 20px;
+      border-radius: 10px;
+    }
   </style>
 </head>
 
@@ -117,7 +121,7 @@
                 style="height: 200px"></textarea>
               <label for="email">Write your email here...</label>
             </div>
-            <button class="w-100 btn btn-lg btn-primary" style=" background-color: #038fdb;">Submit</button>
+            <button class="w-100 btn btn-lg btn-primary">Submit</button>
           </form>
         </div>
       </div>

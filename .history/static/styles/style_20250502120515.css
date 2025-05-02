@@ -1,0 +1,79 @@
+.container {
+
+    background-image: url('images/spamimg.jpg');
+  }
+
+  .navbar {
+    margin-bottom: 20px;
+  }
+
+  .form-container {
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-primary {
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .page-title span {
+    color: #007bff;
+  }
+
+  .container {
+  
+    margin-bottom: 40px;
+  }
+
+  .spam-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  .background {
+    background-image: url('static/images/spamimg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+
+  .content {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Optional dark overlay */
+    padding: 20px;
+    border-radius: 10px;
+  }
